@@ -28,6 +28,7 @@ def checkIfPluginInstalled = { pluginid ->
   "checkstyle",
   "cron_column",
   "dry",
+  "docker-plugin",
   "emotional-jenkins-plugin",
   "git",
   "git-client",
