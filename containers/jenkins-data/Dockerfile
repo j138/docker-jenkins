@@ -1,5 +1,4 @@
-# FROM ubuntu:trusty
-FROM debian:jessie
+FROM ubuntu:trusty
 MAINTAINER Junya Nakazato
 
 RUN useradd -d "/var/jenkins_home" -u 1000 -m -s /bin/bash jenkins
