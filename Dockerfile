@@ -4,6 +4,7 @@ MAINTAINER Junya Nakazato
 USER root
 RUN mkdir /var/log/jenkins /var/cache/jenkins
 RUN chown -R jenkins:jenkins /var/log/jenkins /var/cache/jenkins
+ADD ./init.groovy.d/jenkins-init.groovy /var/cache/jenkins/jenkins-init.groovy
 USER jenkins
 
 ENV JAVA_OPTS="-Xmx2800m"

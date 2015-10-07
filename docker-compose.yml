@@ -4,6 +4,8 @@ jenkins-master:
     - '8080:8080'
   volumes_from:
     - jenkins-data
+  volumes:
+    - ./init.groovy.d/:/var/jenkins_home/init.groovy.d/
 
 jenkins-data:
   build: containers/jenkins-data
