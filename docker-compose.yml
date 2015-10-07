@@ -1,0 +1,9 @@
+master:
+  build: .
+  ports:
+    - '8080:8080'
+  volumes_from:
+    - datastore
+
+datastore:
+  build: containers/datastore
