@@ -1,9 +1,9 @@
-master:
+jenkins-master:
   build: .
   ports:
     - '8080:8080'
   volumes_from:
-    - datastore
+    - jenkins-data
 
-datastore:
-  build: containers/datastore
+jenkins-data:
+  build: containers/jenkins-data
